@@ -1,3 +1,3 @@
 ### Діаграма прецедентів програмного продукту
 
-![UseCaseDiagram](/1-SoftwareRequirements/1.3-SoftwareUserRequirements/1.3.3-UseCaseDiagram/UseCaseDiagram_Miroshnichenko.jpg)
+![UseCaseDiagram](/1-SoftwareRequirements/1.3-SoftwareUserRequirements/1.3.3-UseCaseDiagram/UseCaseDiagram_ai-214_Miroshnichenko.jpg)
