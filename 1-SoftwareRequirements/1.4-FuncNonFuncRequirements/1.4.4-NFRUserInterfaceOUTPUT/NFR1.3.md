@@ -1,3 +1,3 @@
 FR1.3 = NFR2.3
 
-![FR](/SoftwareRequirements/1.4-FuncNonFuncRequirements/1.4.4-NFRUserInterfaceOUTPUT/NFR1.3.jpg)
+![FR](/1-SoftwareRequirements/1.4-FuncNonFuncRequirements/1.4.4-NFRUserInterfaceOUTPUT/NFR1.3.jpg)
