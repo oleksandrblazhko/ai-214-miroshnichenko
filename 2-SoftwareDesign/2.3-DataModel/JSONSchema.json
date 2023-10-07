@@ -1,0 +1,206 @@
+{
+    "title": "Record of user",
+    "description": "This document records the details of a user",
+    "type": "object",
+    "properties": {
+        "Users": {
+            "description": "User details",
+            "type": "object",
+            "properties": {
+                "user id": {
+                    "type": "object",
+                    "properties": {
+                        "login": {
+                            "type": "string"
+                        },
+                        "password": {
+                            "type": "string"
+                        },
+                        "profilePhoto": {
+                            "type": "string"
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "userName": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["login", "password", "profilePhoto", "email", "useName"]
+                }
+            },
+            "required": ["user id"]
+        },
+        "Сhoreographer": {
+            "description": "Choreographer details",
+            "type": "object",
+            "properties": {
+                "choreographer id": {
+                    "type": "object",
+                    "properties": {
+                        "specialization": {
+                            "type": "string"
+                        },
+                        "user id": {
+                            "type": "number"
+                        }
+                    },
+                    "required": ["specialization", "user id"]
+                }
+            },
+            "required": ["choreographer id"]
+        },
+        "Requests for the dance videos": {
+            "description": "Dance request details",
+            "type": "object",
+            "properties": {
+                "dance request id": {
+                    "type": "object",
+                    "properties": {
+                        "purpose": {
+                            "type": "string"
+                        },
+                        "date": {
+                            "type": "string"
+                        },
+                        "user id": {
+                            "type": "number"
+                        }
+                    },
+                    "required": ["purpose", "date", "user id"]
+                },
+                "2": {
+                    "type": "object",
+                    "properties": {
+                        "purpose": {
+                            "type": "string"
+                        },
+                        "date": {
+                            "type": "string"
+                        },
+                        "user id": {
+                            "type": "number"
+                        }
+                    },
+                    "required": ["purpose", "date", "user id"]
+                }
+            },
+            "required": ["1", "2"]
+        },
+        "Responses to dance requests": {
+            "description": "Dance response details",
+            "type": "object",
+            "properties": {
+                "1": {
+                    "type": "object",
+                    "properties": {
+                        "response text": {
+                            "type": "string"
+                        },
+                        "date": {
+                            "type": "string"
+                        },
+                        "request id": {
+                            "type": "number"
+                        }
+                    },
+                    "required": ["response text", "date", "request id"]
+                },
+                "2": {
+                    "type": "object",
+                    "properties": {
+                        "response text": {
+                            "type": "string"
+                        },
+                        "date": {
+                            "type": "string"
+                        },
+                        "request id": {
+                            "type": "number"
+                        }
+                    },
+                    "required": ["response text", "date", "request id"]
+                }
+            },
+            "required": ["dance request id"]
+        },
+        "Expense record": {
+            "description": "Expense record details",
+            "type": "object",
+            "properties": {
+                "1": {
+                    "type": "object",
+                    "properties": {
+                        "purpose": {
+                            "type": "string"
+                        },
+                        "spent money": {
+                            "type": "string"
+                        },
+                        "date": {
+                            "type": "string"
+                        },
+                        "user id": {
+                            "type": "number"
+                        }
+                    },
+                    "required": ["purpose", "spent money", "date", "user id"]
+                },
+                "2": {
+                    "type": "object",
+                    "properties": {
+                        "purpose": {
+                            "type": "string"
+                        },
+                        "spent money": {
+                            "type": "string"
+                        },
+                        "date": {
+                            "type": "string"
+                        },
+                        "user id": {
+                            "type": "number"
+                        }
+                    },
+                    "required": ["purpose", "spent money", "date", "user id"]
+                }
+            },
+            "required": ["1", "2"]
+        },
+        "Moneybox": {
+            "description": "Moneybox details",
+            "type": "object",
+            "properties": {
+                "1": {
+                    "type": "object",
+                    "properties": {
+                        "user's money": {
+                            "type": "string"
+                        },
+                        "user id": {
+                            "type": "number"
+                        }
+                    },
+                    "required": ["user's money", "user id"]
+                }
+            },
+            "required": ["1"]
+        },
+        "User account balance": {
+            "description": "User account balance details",
+            "type": "object",
+            "properties": {
+                "1": {
+                    "type": "object",
+                    "properties": {
+                        "message with remaining money": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["message with remaining money"]
+                }
+            },
+            "required": ["1"]
+        }
+    }
+}
