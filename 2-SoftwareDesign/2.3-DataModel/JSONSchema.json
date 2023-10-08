@@ -1,0 +1,176 @@
+{
+    "title": "Record of user",
+    "description": "This document records the details of a user",
+    "type": "object",
+    "properties": {
+        "Users": {
+            "description": "User details",
+            "type": "object",
+            "properties": {
+                "user id": {
+                    "type": "object",
+                    "properties": {
+                        "login": {
+                            "description": "Логін користувача"
+                            "type": "string"
+                        },
+                        "password": {
+                            "description": "Пароль користувача"
+                            "type": "string"
+                        },
+                        "profilePhoto": {
+                            "description": "Силка на зображення профіля користувача"
+                            "type": "string"
+                        },
+                        "email": {
+                            "description": "Електрона пошта користувача"
+                            "type": "string"
+                        },
+                        "userName": {
+                            "description": "Нікнейм користувача користувача"
+                            "type": "string"
+                        }
+                    },
+                    "required": ["login", "password", "profilePhoto", "email", "userName"]
+                }
+            },
+            "required": ["user id"]
+        },
+        "Сhoreographer": {
+            "description": "Choreographer details",
+            "type": "object",
+            "properties": {
+                "choreographer id": {
+                    "type": "object",
+                    "properties": {
+                        "specialization": {
+                            "description": "Спеціальність хореографа"
+                            "type": "string"
+                        },
+                        "user id": {
+                            "description": "Силка на дані хореографа як користувача"
+                            "type": "number"
+                        }
+                    },
+                    "required": ["specialization", "user id"]
+                }
+            },
+            "required": ["choreographer id"]
+        },
+        "Requests for the dance videos": {
+            "description": "Dance request details",
+            "type": "object",
+            "properties": {
+                "dance request id": {
+                    "type": "object",
+                    "properties": {
+                        "purpose": {
+                            "description": "Текст запиту або ціль запиту "
+                            "type": "string"
+                        },
+                        "date": {
+                            "description": "Дата створення запиту"
+                            "type": "string"
+                        },
+                        "user id": {
+                            "description": "Номер користувача, який кинув запит"
+                            "type": "number"
+                        }
+                    },
+                    "required": ["purpose", "date", "user id"]
+                },
+            "required": ["dance request id"]
+        },
+        "Responses to dance requests": {
+            "description": "Dance response details",
+            "type": "object",
+            "properties": {
+                "dance response id": {
+                    "type": "object",
+                    "properties": {
+                        "response text": {
+                            "description": "Текст відповіді на запит на танцювальні вправи"
+                            "type": "string"
+                        },
+                        "date": {
+                            "description": "Дата відповіді на запит"
+                            "type": "string"
+                        },
+                        "request id": {
+                            "description": "Номер запит,на який йде відповідь"
+                            "type": "number"
+                        }
+                    },
+                    "required": ["response text", "date", "request id"]
+                },
+            },
+            "required": ["dance response id"]
+        },
+        "Expense record": {
+            "description": "Expense record details",
+            "type": "object",
+            "properties": {
+                "exponse record id": {
+                    "type": "object",
+                    "properties": {
+                        "purpose": {
+                            "description": "Куди були витрачені гроші"
+                            "type": "string"
+                        },
+                        "spent money": {
+                            "description": "Гроші, витрачені на будь-яку покупку"
+                            "type": "string"
+                        },
+                        "date": {
+                            "description": "Дата витрати"
+                            "type": "string"
+                        },
+                        "user id": {
+                            "description": "Користувач,який зробив витрату"
+                            "type": "number"
+                        }
+                    },
+                    "required": ["purpose", "spent money", "date", "user id"]
+                },
+            "required": ["exponse record id"]
+        },
+        "Moneybox": {
+            "description": "Moneybox details",
+            "type": "object",
+            "properties": {
+                "moneybox id": {
+                    "type": "object",
+                    "properties": {
+                        "user's money": {
+                            "description": "Поточна кількість грошей користувача"
+                            "type": "string"
+                        },
+                        "user id": {
+                            "description": "Користувач,для якого рахується поточний стан грошей"
+                            "type": "number"
+                        }
+                    },
+                    "required": ["user's money", "user id"]
+                }
+            },
+            "required": ["moneybox id"]
+        },
+        "User account balance": {
+            "description": "User account balance details",
+            "type": "object",
+            "properties": {
+                "balance message id": {
+                    "type": "object",
+                    "properties": {
+                        "message with remaining money": {
+                            "description": "Повідомлення с залишком грошей користувача"
+                            "type": "string"
+                        }
+                    },
+                    "required": ["message with remaining money"]
+                }
+            },
+            "required": ["balance message id"]
+        }
+    }
+}
