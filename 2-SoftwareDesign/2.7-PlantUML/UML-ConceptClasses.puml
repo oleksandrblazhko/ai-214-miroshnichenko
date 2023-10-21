@@ -1,0 +1,34 @@
+@startuml
+
+hide circle
+title UML Concept Classes
+
+Class User {
+    login
+    password
+}
+
+CLass AdditionalUserInfo {
+    profilePhoto
+    email
+    nickname
+}
+
+Class DanceVideosRequest {
+    requestText
+    date
+}
+
+Class Choreographer {
+    specialization
+}
+
+User <|-- Choreographer
+
+AdditionalUserInfo o-- User
+
+User"1" --> "*"DanceVideosRequest : send
+
+Choreographer"1" --> "*"DanceVideosRequest : review
+
+@enduml
