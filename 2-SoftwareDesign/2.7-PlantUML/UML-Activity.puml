@@ -1,0 +1,19 @@
+@startuml
+
+title Activity Diagram Miroshnichenko
+
+start
+:The user enters login to the first field; 
+:The user enters password to the second field;
+:The user clicks the registration/authorizatio button; 
+:The program analyzes user data; 
+
+if (User`s Data Correct?) then (no)
+   :Your data is incorrect! Try one more time;
+else (yes)
+   :Your data is correct! Welcome to the app; 
+endif
+
+stop
+
+@enduml
