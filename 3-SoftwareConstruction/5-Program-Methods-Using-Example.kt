@@ -32,7 +32,7 @@ when(sendExpenseRecord(purposeSpent,dateSpent,moneySpent)) {
 // Приклад неправильної взаємодії з користувачем та збереженням витрати користувача
 val repository = ExpenseRecordRepository()
 val dateSpent = "24.12.2023"
-val moneySpent = -150.0
+val moneySpent = 150.0
 val purposeSpent = "2 kg of tomatoes"
 
 when(sendExpenseRecord(purposeSpent,dateSpent,moneySpent)) {
@@ -45,7 +45,7 @@ when(sendExpenseRecord(purposeSpent,dateSpent,moneySpent)) {
 // Приклад неправильної взаємодії з користувачем та збереженням витрати користувача
 val repository = ExpenseRecordRepository()
 val dateSpent = "24.10.2023"
-val moneySpent = -150.0
+val moneySpent = 150.0
 val purposeSpent = "2 kg of tomatoessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
 
 when(sendExpenseRecord(purposeSpent,dateSpent,moneySpent)) {
